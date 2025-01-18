@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #525296;
+        }
+        div {
+            color: white;
+            text-align: center;
+            font-family: "Metal", serif;
+        }
+        h1 {
+            height: 25px;
+        }
+        .form-container {
+            background-color: #252545;
+            text-align: left;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        select {
+            width: 90%;
+            font-family: "Metal", serif;
+            font-size: 10px;
+        }
+        input {
+            width: 90%;
+        }
+        input.left {
+            width: 10px;
+        }
+        button {
+            background-color: #37af65;
+            color: #fff;
+            width: 90%;
+            height: 40px;
+            font-family: "Metal", serif;
+            font-size: 20px;
+        }
+        form {
+            padding: 5% 5% 5% 5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Amman Coding Academy Survey Form</h1>
+        <p>Thank you for taking the time to help</p>
+        <div class="form-container">
+            <form action="" method="post">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name" required><br>
+                <label for="e-mail">Email</label><br>
+                <input type="email" id="e-mail" placeholder="Enter your Email" required><br>
+                <label for="age">Age <small>(optional)</small></label><br>
+                <input type="text" id="age" placeholder="Age"><br>
+                <label for="like-it?">How did you like my survey</label><br>
+                <select id="like-it?" required>
+                    <option value="">How did you like my survey</option>
+                    <option value="Very-good">Very good</option>
+                    <option value="Good">Good</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Bad">Bad</option>
+                    <option value="Very-bad">Very bad</option>
+                </select><br>
+                <label>Would you recommend my pen to a frend?</label><br>
+                <input type="radio" id="Definitely" name="recommendation" value="Definitely" class="left">
+                <label for="Definitely">Definitely</label><br>
+                <input type="radio" id="Maybe" name="recommendation" value="Maybe" class="left">
+                <label for="Maybe">Maybe</label><br>
+                <input type="radio" id="Not-sure" name="recommendation" value="Not-sure" class="left">
+                <label for="Not-sure">Not sure</label><br>
+                <label for="Fav-feature">What is your favorite feature codepen?</label><br>
+                <select id="Fav-feature" required>
+                    <option value="">Select an option</option>
+                    <option value="Live-Preview">Live Preview</option>
+                    <option value="Collaborative-Editing">Collaborative Editing</option>
+                    <option value="Asset-Hosting">Asset Hosting</option>
+                    <option value="Prefill-and-Templates">Prefill and Templates</option>
+                    <option value="Embedding-and-Sharing">Embedding and Sharing</option>
+                </select><br>
+                <label>What would you like to see improved in my survey? <small>(Check all that apply)</small></label><br>
+                <input type="checkbox" id="CSS-complex" name="improvement" value="CSS-complex" class="left">
+                <label for="CSS-complex">CSS needs to be more complex</label><br>
+                <input type="checkbox" id="JS" name="improvement" value="JS" class="left">
+                <label for="JS">Use some javascript</label><br>
+                <input type="checkbox" id="No-changes" name="improvement" value="No-changes" class="left">
+                <label for="No-changes">No changes required</label><br>
+                <label for="Suggestions">Any comments or Suggestions</label><br>
+                <textarea rows="8" placeholder="Enter your comment here..." style="width: 90%;"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
